@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Profile::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Profile::VERSION = '0.01';
+  $Cache::Profile::VERSION = '0.02';
 }
 use Moose;
 
@@ -28,6 +28,12 @@ sub AUTOLOAD {
     $self->cache->$method(@_);
 }
 
+sub isa {
+    my ( $self, $class ) = @_;
+
+    $self->SUPER::isa($class) or $self->cache->isa($class);
+}
+
 my @timer_names = qw(hit get set miss);
 
 sub timer_names { @timer_names }
@@ -46,7 +52,7 @@ foreach my $method ( "all", @timer_names ) {
         },
     );
 
-    foreach my $measure qw(real cpu) {
+    foreach my $measure ( qw(real cpu) )  {
         my $time = "total_${measure}_time_${method}";
         has $time => (
             traits => [qw(Number)],
@@ -450,11 +456,11 @@ Resets the counters/timers.
 
 =head1 AUTHOR
 
-  Yuval Kogman
+Yuval Kogman
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Yuval Kogman.
+This software is copyright (c) 2011 by Yuval Kogman.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

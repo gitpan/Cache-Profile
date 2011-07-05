@@ -1,0 +1,39 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.66.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 cd32d148bfc705bff86d62a408b48e3226c24234 Changes
+SHA1 e4efa15e6ccd24e12d153aa60bfe980a2e6d1343 LICENSE
+SHA1 9cbadf2be6cc29538f36702494c85504982c68b6 MANIFEST
+SHA1 989e714d39b35c03523e450ae5a56ac1f441e9ca META.json
+SHA1 0f8741076d487c2f01a8604f1a3ddeac090e0788 META.yml
+SHA1 a13577054f9c9259bc38d70339af54514a02574b Makefile.PL
+SHA1 ed3a120288ce96fa05b056aa702b8c5fea4be78c README
+SHA1 33091971048114c9a5a1d344d7cf56de20f807f7 dist.ini
+SHA1 fdfc8900bb749093e1f7202959963bea48c08a01 lib/Cache/Profile.pm
+SHA1 63af2713a4a93f2c5487f73b0065ac551f056ec8 lib/Cache/Profile/Compare.pm
+SHA1 67b7fb65ea85f502e6a1296d0e27422d8382759e lib/Cache/Profile/CorrelateMissTiming.pm
+SHA1 8f19b397b1e302605e401c06df67947ce2a7548c t/profile.t
+SHA1 a032c41ef6887fab1b900669c2d304fab46680e2 t/release-eol.t
+SHA1 455d1dd1867212a665ad5ea4126b572411de300c t/release-no-tabs.t
+SHA1 9433c240fe590bc404ab68ff63984df763e347ed t/release-pod-coverage.t
+SHA1 b30cbdfaf935017c4568c0c91b242438cb87786e t/release-pod-syntax.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG/MacGPG2 v2.0.12 (Darwin)
+
+iEYEARECAAYFAk4SwmoACgkQVCwRwOvSdBgY5gCePBVNwxO7KGbEXFY8KxFrYJvr
+TbEAnjWzJNc15KTmmpEUUJu+DQwp1f/u
+=jSe/
+-----END PGP SIGNATURE-----

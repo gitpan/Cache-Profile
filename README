@@ -1,11 +1,11 @@
 
 
 This archive contains the distribution Cache-Profile,
-version 0.01:
+version 0.02:
 
   Measure the performance of a cache
 
-This software is copyright (c) 2010 by Yuval Kogman.
+This software is copyright (c) 2011 by Yuval Kogman.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

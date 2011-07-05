@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Profile::Compare::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Profile::Compare::VERSION = '0.01';
+  $Cache::Profile::Compare::VERSION = '0.02';
 }
 use Moose;
 
@@ -201,11 +201,11 @@ Returns the caches sorted by hit rate.
 
 =head1 AUTHOR
 
-  Yuval Kogman
+Yuval Kogman
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Yuval Kogman.
+This software is copyright (c) 2011 by Yuval Kogman.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
